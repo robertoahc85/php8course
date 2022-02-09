@@ -1,26 +1,33 @@
 <?php
-namespace foodphp7;
 
-class FoodPhp7 {
+
+class Foodphp7{
     
-    /** Propiedas */
-    public string $tamales;
-    public string $enchiladas;
-    public string $tostadas;
-    public string $tacos;
-  
+    public string $name;
+    public string $patty;
+    public string $sauce;
+    public string $meatType;
+    public string $salad;
+    public array $additions; 
     
+
 public function __construct(
-    string $tamales,
-    string $enchiladas,
-    string $tostadas,
-    string $tacos,    /** Parametros */
+    string $name,
+    string $patty,
+    string $sauce,
+    string $salad,
+    string $meatType = "beef", 
+    array $additions = []
 ) {
-    $this->tamales = $tamales;
-    $this->enchiladas = $enchiladas;
-    $this->tostadas = $tostadas;
-    $this->tacos = $tacos;/** Asignar valor de cada parametro a una propiedad */
-
+    $this->name = $name;
+    $this->patty = $patty;
+    $this->sauce = $sauce;
+    $this->meatType = $meatType;
+    $this->salad = $salad;
+    $this->additions = $additions;
 }
 
 }
+
+
+
