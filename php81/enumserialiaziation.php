@@ -15,7 +15,7 @@ print_r(Baz::Beep);
 Foo Enum (
     [name] => Bar
 )
-Baz Enum:int {
+Baz Enum:int {$
     [name] => Beep
     [value] => 5
 }
